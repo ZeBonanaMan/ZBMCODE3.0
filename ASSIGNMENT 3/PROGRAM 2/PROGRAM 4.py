@@ -7,7 +7,7 @@ def calculate():
         price = price_entry.get()
 
         if not money or not price:
-            result_label.config(text="Please enter valid money and price.")
+            result_label.config(text="Please enter the needed values.")
             return
         
         money = float(money)

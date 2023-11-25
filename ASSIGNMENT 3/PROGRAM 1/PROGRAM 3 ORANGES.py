@@ -11,6 +11,10 @@ def calculate_cost():
     orange_input = orange_entry.get()
     apple_input = apple_entry.get()
 
+    if not orange_input and not apple_input:
+        total_cost_label.config(text="Please insert valid values")
+        return
+    
     if not orange_input.isdigit() and not apple_input.isdigit():   
         total_cost_label.config(text="Hmm, I don't really know how to \ncompute these...")
 
